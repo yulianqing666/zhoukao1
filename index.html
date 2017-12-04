@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+</head>
+<body>
+
+    <div class="wrap" ng-controller="main">
+        <header>
+            <span style="width:10%;"></span>
+            <span>公司</span>
+            <span style="width:10%;"><i class="icon iconfont icon-fangdajing" style="font-size: .6rem;"></i></span>
+        </header>
+
+
+
+        <section>
+            <div class="box" ng-model="filterValue">
+                <h4>{{player.name}}</h4>
+                <p>{{player.where}}</p>
+                <p>{{player.what}}</p>
+                <p>{{player.but}}</p>
+            </div>
+            <div class="box" ng-model="filterValue">
+                <h4>{{player.name}}</h4>
+                <p>{{player.where}}</p>
+                <p>{{player.what}}</p>
+                <p>{{player.but}}</p>
+            </div>
+            <div class="box" ng-model="filterValue">
+                <h4>{{player.name}}</h4>
+                <p>{{player.where}}</p>
+                <p>{{player.what}}</p>
+                <p>{{player.but}}</p>
+            </div>
+            <div class="box" ng-model="filterValue">
+                <h4>{{player.name}}</h4>
+                <p>{{player.where}}</p>
+                <p>{{player.what}}</p>
+                <p>{{player.but}}</p>
+            </div>
+
+        </section>
+
+
+
+        <footer>
+            <ul>
+                <li><i class="icon iconfont icon-weixin" style="font-size:.6rem;"></i><br>职位</li>
+                <li><i class="icon iconfont icon-daishouhuo-01" style="font-size:.6rem;"></i><br>公司</li>
+                <li><i class="icon iconfont icon-xinxi" style="font-size:.6rem;"></i><br>消息</li>
+                <li><i class="icon iconfont icon-wode" style="font-size:.6rem;"></i><br>我的</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="./angular.js"></script>
+    <script>
+        function login() {
+            $.ajax({
+                url: 'http://localhost:3000/login',
+                type: 'POST',
+                data: {
+                    account: $('.account').val(),
+                    password:md5($('.password').val())
+                }
+            })
+                .then(function (result) {
+                    console.log(result)
+                }, function (error) {
+                    console.log(error)
+                })
+        }
+        function register() {
+            $.ajax({
+                url: 'http://localhost:3000/register',
+                type: 'POST',
+                data: {
+                    account: $('.account').val(),
+                    password: $('.password').val()
+                }
+            })
+                .then(function (result) {
+                    console.log(result)
+                }, function (error) {
+                    console.log(error)
+                })
+        }
+    </script>
+
+</body>
+</html>

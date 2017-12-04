@@ -1,0 +1,85 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "黑体"; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #2f2f2f; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 1rem;
+  background: #53cac3;
+  padding: 0 .1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span{
+  font-size:.6rem;
+  color:#fff;
+  float: left;
+
+}
+header span i{
+  float: left;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  overflow-y: scroll;
+  flex: 1; }
+
+
+footer{
+  height:1.5rem;
+  border-top: 1rem solid #cccc;
+}
+
+footer ul li{
+  float: left;
+  width: 25%;
+  font-size:.45rem;
+  text-align:center;
+  line-height: .5rem;
+  padding-top: .2rem;
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
